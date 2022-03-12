@@ -6,6 +6,7 @@ class CheesesController < ApplicationController
   end
 
   def show
+    # Dynamic route
     cheese = Cheese.find(params[:id])
     render json: cheese
   end
